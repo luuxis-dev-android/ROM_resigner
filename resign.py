@@ -104,7 +104,7 @@ for root, dirs, files in os.walk(romdir):
                 index = 0
                 for seinfo in seinfos:
                     if CheckCert(out, signatures64[index]):
-                        sign(jarfile, seinfo)
+                        sign (jarfile, seinfo)
                         break
                     index += 1
                 if index == certlen:
